@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Exo", sans-serif;
+  color: #111;
+  background-image: url("alexander.jpg");
+  background: linear-gradient(45deg, #ffec3e, #00ff55, #c6c7ffff);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300% 300%;
+  animation: gradientBG 20s ease infinite;
+  scroll-behavior: unset;
+  overflow: hidden;
+  padding-left: 1em;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  bottom: 0vh;
+  width: 100%;
+  position: absolute;
+  bottom: 10vh;
+  margin-left: 65vw;
+}
+img:hover {
+  opacity: 0.6;
+  filter: blur(0px);
+}
+.content {
+  font-size: 1.5vw;
+  width: fit-content;
+}
+img {
+  transition: filter 0.5s ease, opacity 0.2s ease-out;
+  opacity: 0.1;
+  border-radius: 50%;
+  filter: blur(8px);
+  position: absolute;
+  height: 90%;
+  left: -35%;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+h5 {
+  font-weight: 300;
+}
+
+a {
+  float: right;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 1px solid #111;
+}
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    color: #000;
+    position: relative;
+    width: 500px;
+    bottom: 0;
+    top: 1em;
+    margin: auto;
+  }
+  .content {
+    font-size: 2em;
+    width: fit-content;
+  }
+  img {
+    filter: blur(0px);
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
