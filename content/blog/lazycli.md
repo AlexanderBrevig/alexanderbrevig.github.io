@@ -1,89 +1,28 @@
 +++
 title = "LazyCLI"
-date = 1350636353
+date = 2012-10-19
+description = "Easily enable your static functions to be CLI callable"
 category = "Old"
 tags = ["Old"]
 github = "https://github.com/alexanderbrevig/LazyCLI"
 visibility = "public"
 languages = "C#"
-interest_score = 0
+interest_score = 3
+draft = true
+
+[extra]
+post_tags = ["Old"]
 +++
+
+
+
+
 
 ## About
 
 Easily enable your static functions to be CLI callable
-## Original README
 
-LazyCLI
-=======
+## Article
 
-Easily enable your static functions to be CLI callable! 
-Just add an annotation, and call a method in your Main.
+Add an attribute to a static method, call one setup function, and suddenly your CLI app just works. It's a nice convenience layer—saves you from writing boilerplate argument parsing for every little utility. Useful? Sure. Innovative? Not really. This is the kind of solution people come up with when they get tired of writing the same CLI scaffolding over and over. It works well for what it does, but it's solving a solved problem.
 
-Easily install with NuGet using Package Manager Console:
-
-    PM> Install-Package LazyCLI
-
-[![endorse](http://api.coderwall.com/alexanderbrevig/endorsecount.png)](http://coderwall.com/alexanderbrevig)
-
-About this library: http://coderwall.com/p/ghlaga
-
-Example
--------
-
-I find that the best way to describe something is to show it, so here it is!
-
-Notice that the default behavior of the CLI attribute is to require the namespace, the class and the method to be part of the command. So the static void World function is accessible through string[]{"CLI", "Hello", "World", "msg here"}.
-The static void Galaxy is available through its alias of string[]{"CLI2", "Galaxy", "msg here", "2"}
-
-    using System;
-    using LazyCLI;
-    namespace CLI
-    {
-        public static class Hello
-        {
-            [LazyCLI]
-            public static void World(string msg)
-            {
-                Console.WriteLine("Hello World: " + msg);
-            }
-    
-            [LazyCLI("CLI2.Galaxy")]
-            public static void Galaxy(string msg, string times)
-            {
-                for (int i = 0; i < Int32.Parse(times); i++)
-                {
-                    Console.WriteLine(msg);
-                }
-            }
-        }
-    
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                Console.WriteLine("This is a quick demo for using the CLIAttribute.\r\nYou might want to simply pass the string[] args to the HandleArgs function.\r\n");
-    
-                /// Will print: 'Hello World: This is pretty handy'
-                LazyCLI.CLI.HandleArgs(new string[] { "CLI", "Hello", "World", "This is pretty handy" });
-                Console.ReadKey();
-    
-                /// Will print:
-                ///   Andromeda
-                ///   Andromeda
-                ///   Andromeda
-                LazyCLI.CLI.HandleArgs(new string[] { "CLI2", "Galaxy", "Anromeda", "3" });
-                Console.ReadKey();
-            }
-        }
-    }
-
-Sample printout
-
-    This is a quick demo for using the CLIAttribute.
-    You might want to simply pass the string[] args to the HandleArgs function.
-    
-    Hello World: This is pretty handy
-    Anromeda
-    Anromeda
-    Anromeda

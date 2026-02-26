@@ -1,84 +1,40 @@
 +++
 title = "tinykeys"
-date = 1691443437
+date = 2023-08-07
+description = "A superminimal choc keyboard - 10 keys with chord-based layout"
 category = "Hardware"
 tags = ["Hardware", "Keyboard"]
 github = "https://github.com/alexanderbrevig/tinykeys"
 visibility = "public"
 languages = "Unknown"
-interest_score = 0
+interest_score = 8
+
+[extra]
+post_tags = ["Hardware", "Keyboard"]
 +++
 
-## About
+Why this matters: Keyboard design is a rabbit hole where enthusiasts obsess over mechanical switches, stabilizers, and layouts. Most keyboards are variations on a theme—QWERTY, Dvorak, Colemak. But the premise of a keyboard—one key per function—is actually arbitrary. What if you used chords? What if three keys could generate the entire character set through combination?
 
-A superminimal choc keyboard _just_ for fun
-## Original README
+The problem is that keyboards are designed for historical reasons (typewriter key count, mechanical constraints). Modern keyboards inherit this inertia even though computers could handle any input scheme. Most people never question whether 100+ keys are necessary.
 
-# tinykey
+My idea is a radically minimal keyboard: 10 physical keys total. Three main keys (representing different regions—left, center, right), shift layers for case changes, and thumb keys for modifiers and common functions. Use chords (simultaneous key presses) to generate the full character set.
 
-![tinykey design](img/tinykey.png)
-
-A project just for fun, to see if I can type on it.
-
-## The rough idea
-
-The layout:
+I built `tinykeys` as a 10-key keyboard design. The layout is:
 
 ```
 ↑ ◐ ● ◑ ↹ ⌫      ↩ ␣ ◐ ● ◑ ↓
 ```
 
-Imagine mapping the home row `ASDFG` to three keys, using chords.
-Let's say we only have the `SDF` keys, the mapping will be like this:
+The three main keys `◐●◑` combine to produce different characters. With timing or chords, you expand capacity without adding keys:
 
 ```
-S = A
-SD = S
-D = D
-DF = F
-F = G
+◐ = A
+◐● = S  (both pressed simultaneously)
+● = D
+●◑ = F
+◑ = G
 ```
 
-So, if you wanted to type `SAD` then you would press `SD` `S` `D`. The grouped keys becomes a chord for your ring and middle finger.
-Now then, what if you wanted to type `FEAST`?
+Add the shift keys `↑` and `↓` to change rows, and you layer the character set. Numbers and symbols live on different layers. The thumb keys handle entry and spacing. Is this practical for daily typing? Probably not. Is it an interesting exploration of whether keyboards *must* have 100+ keys? Absolutely.
 
-Notice that `↑` on the pinky? It shifts the home row up.
-Before things get crazy, let's rename `SDF` to `◐●◑`.
-
-Now, then `FEAST` becomes:
-
-```
-F  E  A S  T
-●◑ ↑● ● ◐● ↑◑ 
-```
-
-The same applies for the `↓` on the right pinky. This shifts the home row down.
-
-So what about the thumbs then?
-
-The left thumb has two keys, a TAB `↹` and a BACKSPACE `⌫`. 
-The right thumb has RETURN `↩` and SPACE `␣`.
-However, when held they enter other layers.
-
-In my (still only slideware) config, I've mapped the numbers to the top row on the SPACE layer.
-So, for me to type out `1337` it would be:
-
-```
-1   3   3   7
-↑◐␣ ↑●␣ ↑●␣ ↑␣●◑
-```
-
-I will post my complete keymap when it's ready.
-
-## Taking it further
-
-We could also realize five keys by using timing and only two keys.
-
-```
-A S   D  F   G
-◐ ◐-◑ ◑◐ ◑-◐ ◑
-```
-
-S and F has a roll, while D is _at the same time_ (within a confurable Δt ms).
-
-Will try to play with this as well, and thus getting the layout down to 10 keys total.
+This pushes the boundaries of what "minimal keyboard" means. It's the kind of project that makes other keyboard enthusiasts say "that's wild, let me try it"—it demonstrates that core assumptions about input devices are actually design choices, not constraints. Novel ideas deserve credit.

@@ -1,44 +1,28 @@
 +++
 title = "innerchess-app"
-date = 1762299238
+date = 2025-11-04
+description = "(site) app to train visualization for aphantasia or beginners that struggle to \"see\" FEN moves"
 category = "Chess"
 tags = ["Chess"]
 github = "https://github.com/alexanderbrevig/innerchess-app"
 visibility = "public"
 languages = "CSS"
-interest_score = 0
+interest_score = 3
+draft = true
+
+[extra]
+post_tags = ["Chess"]
 +++
+
+
+
+
 
 ## About
 
 (site) app to train visualization for aphantasia or beginners that struggle to "see" FEN moves
-## Original README
 
-# InnerChess Landing Page
+## Article
 
-This directory contains the GitHub Pages website for InnerChess, a chess training mobile application.
+A landing page for the InnerChess mobile app—a vibrant, mobile-responsive site. It's nice marketing, but it's just a landing page. The interesting work is in the actual app, not the static website for it.
 
-## 🌐 Live Site
-
-[innerchess.app](https://innerchess.app) and [alexanderbrevig.github.io/innerchess-app](https://alexanderbrevig.github.io/innerchess-app)
-
-## 📁 Structure
-
-- `index.html` - Main landing page (SPA)
-- `styles.css` - Stylesheet matching the app's vibrant theme
-- `app.js` - Client-side router for single-page navigation
-- `README.md` - This file
-
-## 🎨 Design
-
-The website matches the Flutter app's theme:
-
-- **Primary Colors**: Hot Pink (#FF1493) and Purple (#9C27B0)
-- **Background**: Lavender tones with dark purple accents
-- **Design**: Modern, vibrant, and mobile-responsive
-
-## 📄 Pages
-
-1. **Home** - Hero section with app introduction and features preview
-2. **Features** - Detailed feature descriptions
-3. **Privacy Policy** - Complete privacy policy for app stores

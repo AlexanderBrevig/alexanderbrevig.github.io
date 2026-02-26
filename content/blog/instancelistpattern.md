@@ -1,86 +1,28 @@
 +++
 title = "InstanceListPattern"
-date = 1350247781
+date = 2012-10-14
+description = "Easily make your object maintain an internal list of instances, relies on the programmer to Dispose();"
 category = "Old"
 tags = ["Old"]
 github = "https://github.com/alexanderbrevig/InstanceListPattern"
 visibility = "public"
 languages = "C#"
-interest_score = 0
+interest_score = 2
+draft = true
+
+[extra]
+post_tags = ["Old"]
 +++
+
+
+
+
 
 ## About
 
 Easily make your object maintain an internal list of instances, relies on the programmer to Dispose();
-## Original README
 
-InstanceListPattern
-===================
+## Article
 
-Easily make your object maintain an internal list of instances, relies on the programmer to Dispose();
+This is a clever little pattern for automatically keeping track of every instance of a class. Inherit from `InstanceList<T>` and boom—you've got a static list of all living instances. It's the kind of thing that's useful for specific scenarios (game objects, entity tracking, etc.) but really only if you're diligent about calling Dispose(). Without that, you'll leak memory hard. It's a nice idea, but it's solving a niche problem and it's easy to shoot yourself in the foot with it.
 
-You can install from Package Manager Console:
-
-    PM> Install-Package InstanceListPattern
-
-
-Here is an example:
-
-    namespace InstanceListPatternSample
-    {
-        class Person : InstanceList<Person>
-        {
-            public Person(string name)
-            {
-                this.Name = name;
-            }
-
-            public string Name { get; set; }
-
-            public override string ToString()
-            {
-                return Name;
-            } 
-        }
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                Person p1 = new Person("p1");
-                Person p2 = new Person("p2");
-
-                PrintAllPersons(); 
-                
-                Person p3 = new Person("p3");
-
-                PrintAllPersons();
-
-                p3.Dispose();
-
-                PrintAllPersons();
-
-                Console.Read();
-            }
-
-            private static void PrintAllPersons()
-            {
-                Console.WriteLine("All instances:");
-                foreach (var p in Person.Instances) {
-                    Console.WriteLine(p);
-                }
-            }
-        }
-    }
-
-Print output:
-
-    All instances:
-    p1
-    p2
-    All instances:
-    p1
-    p2
-    p3
-    All instances:
-    p1
-    p2

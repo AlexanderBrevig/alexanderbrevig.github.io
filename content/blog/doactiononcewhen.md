@@ -1,94 +1,17 @@
 +++
 title = "DoActionOnceWhen"
-date = 1353803555
+date = 2012-11-25
+description = "Do something only once when a predicate is met"
 category = "Old"
 tags = ["Old"]
 github = "https://github.com/alexanderbrevig/DoActionOnceWhen"
 visibility = "public"
 languages = "C#"
-interest_score = 0
+interest_score = 1
+draft = true
+
+[extra]
+post_tags = ["Old"]
 +++
 
-## About
-
-Do something only once when a predicate is met
-## Original README
-
-DoActionOnceWhen
-================
-
-Do something only once when a predicate is met
-
-Install with Package Manager Console
-    
-    PM> Install-Package DoActionOnceWhen
-
-Example
--------
-
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using AB.Utilities;
-    
-    namespace ConsoleApplication2
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                var fizzOnce = DoActionOnceWhen.Do(() => Console.WriteLine("Fizz"));
-                var buzzOnce = DoActionOnceWhen.Do(() => Console.WriteLine("Buzz"));
-                var fizzbuzzOnce = DoActionOnceWhen.Do(() => Console.WriteLine("FizzBuzz"));
-                var resetOnce = DoActionOnceWhen.Do(() => fizzOnce.Reset());
-    
-                for (int i = 1; i <= 30; ++i) {
-                    bool mod3 = i % 3 == 0;
-                    bool mod5 = i % 5 == 0;
-                    if (!fizzOnce.When(() => mod3) 
-                        && !buzzOnce.When(() => mod5)
-                        && !fizzbuzzOnce.When(() => mod3 && mod5)) {
-                            Console.WriteLine(i);
-                    }
-    
-                    resetOnce.When(() => i > 25);
-                }
-    
-                Console.ReadKey();
-            }
-        }
-    }
-
-Print out:
-
-    1
-    2
-    Fizz
-    4
-    Buzz
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    FizzBuzz
-    16
-    17
-    18
-    19
-    20
-    21
-    22
-    23
-    24
-    25
-    26
-    Fizz
-    28
-    29
-    30
+A micro-utility for firing an action exactly once when a condition becomes true. The FizzBuzz example in the README is the perfect use case—and also the most interesting you can get with this idea. It solves a tiny, specific problem that's useful in some game loops or state machines. But honestly, this is the kind of thing you write inline when you need it rather than pulling in a library. Useful? Yes. Reusable? Only for that one case.

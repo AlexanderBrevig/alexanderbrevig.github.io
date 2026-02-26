@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+{{ macros_page_header::page_header(title=section.title) }}
+
+<div class="tags-container">
+    <p>Browse articles by tag. Click on a tag to view all articles in that category.</p>
+
+    <div class="tags-grid">
+        {{ section.content | safe }}
+    </div>
+</div>
+
+{% endblock main_content %}

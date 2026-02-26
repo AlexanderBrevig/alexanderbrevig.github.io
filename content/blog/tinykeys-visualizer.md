@@ -1,24 +1,27 @@
 +++
 title = "tinykeys-visualizer"
-date = 1692001589
+date = 2023-08-14
+description = "Visualizer/simulator for tinykeys layout"
 category = "Hardware"
 tags = ["Hardware", "Keyboard"]
 github = "https://github.com/alexanderbrevig/tinykeys-visualizer"
 visibility = "public"
 languages = "Rust"
-interest_score = 0
+interest_score = 4
+draft = true
+
+[extra]
+post_tags = ["Hardware", "Keyboard"]
 +++
+
+
+
+
 
 ## About
 
-Just a simple little visualizer for my tinykeys
-## Original README
+Visualizer/simulator for tinykeys layout
 
-# tinykeys visualizer
+## Article
 
-Nothing to see here really, but since you're here:
-
-See [tinykeys](https://github.com/alexanderbrevig/tinykeys) for an explanation.
-
-
-This is a learning utility, where I can type and see what it would be like.
+Rust simulator for testing the tinykeys chord layout without hardware. Supporting tool, thoughtfully built.

@@ -1,0 +1,15 @@
++++
+title = "Luxonome (visual metronome for live performance"
+template = "tag-page.html"
+render = true
+
+[extra]
+tag_name = "Luxonome (visual metronome for live performance"
++++
+
+- [luxonome.github.io](/blog/luxonome-github-io/) — 2023-04-19
+  > Landing page for Luxonome
+- [luxonome-hub](/blog/luxonome-hub/) — 2023-04-18
+  > Part of Luxonome visual metronome system
+- [luxonome-node](/blog/luxonome-node/) — 2023-04-18
+  > Luxonome PCB panelization for manufacturing

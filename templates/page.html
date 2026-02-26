@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+{{ macros_page_header::page_header(title=page.title, date=page.date) }}
+
+{%- if page.extra.post_tags -%}
+<div class="page-tags">
+    {%- for tag in page.extra.post_tags -%}
+        <a class="tag" href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
+    {%- endfor -%}
+</div>
+{%- endif -%}
+
+{{ page.content | safe }}
+
+{%- include "partials/footer.html" -%}
+
+{% endblock main_content %}

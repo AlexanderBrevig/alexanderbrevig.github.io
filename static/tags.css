@@ -1,0 +1,10 @@
+/* Tag styling - all uppercase */
+.tag,
+.bloglist-tags .tag,
+.archive-tags .tag,
+.page-tags .tag {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-inline-end: 0.75rem;
+}

@@ -1,32 +1,28 @@
 +++
 title = "InnerChess"
-date = 1761918949
+date = 2025-10-31
+description = "A Flutter app to train chess visualization for players with aphantasia"
 category = "Chess"
 tags = ["Chess"]
 github = "https://github.com/alexanderbrevig/InnerChess"
 visibility = "private"
 languages = "Dart"
-interest_score = 0
+interest_score = 4
+draft = true
+
+[extra]
+post_tags = ["Chess"]
 +++
+
+
+
+
 
 ## About
 
+A Flutter app to train chess visualization for players with aphantasia
 
-## Original README
+## Article
 
-# InnerChess
+A Flutter-based chess visualization training app targeting people with aphantasia or who struggle with visualization. The README is boilerplate Flutter starter text, so it's hard to assess implementation depth from the repo alone. The concept is solid—chess visualization is a learnable skill and targeting people who struggle with it is thoughtful. Need to see more of the actual app.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

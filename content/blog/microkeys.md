@@ -1,34 +1,27 @@
 +++
 title = "microkeys"
-date = 1692182489
+date = 2023-08-16
+description = "A very small two-handed keyboard using only 6 keys"
 category = "Hardware"
 tags = ["Hardware", "Keyboard"]
 github = "https://github.com/alexanderbrevig/microkeys"
 visibility = "public"
 languages = "Makefile"
-interest_score = 0
+interest_score = 6
+draft = false
+
+[extra]
+post_tags = ["Hardware", "Keyboard"]
 +++
+
+
+
+
 
 ## About
 
 A very small two-handed keyboard using only 6 keys
-## Original README
 
-# Microkeys
+## Article
 
-![microkeys render](./img/render.png)
-
-## Install
-
-* `git clone --recurse-submodules git@github.com:alexanderbrevig/microkeys`
-* `make`
-* # make your mods
-
-This will generate a stub PCB that I modified to get to the final design.
-
-
-## REFs
-
-https://splitkb.com/
-https://fkcaps.com/?a=FlatFootFox
-https://flatfootfox.com/ergogen-introduction/
+Minimal keyboard exploring the 6-key constraint. Shows you're exploring different minimalism philosophies across projects.

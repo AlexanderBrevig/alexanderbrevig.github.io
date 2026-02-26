@@ -1,29 +1,27 @@
 +++
 title = "midiscreen"
-date = 1762953055
+date = 2025-11-12
+description = "Control video playback over MIDI on Raspberry Pi"
 category = "Hardware"
-tags = ["Hardware", "Audio / live performance"]
+tags = ["Hardware", "Audio"]
 github = "https://github.com/alexanderbrevig/midiscreen"
 visibility = "private"
 languages = "Rust"
-interest_score = 0
+interest_score = 4
+draft = true
+
+[extra]
+post_tags = ["Hardware", "Audio"]
 +++
+
+
+
+
 
 ## About
 
-Control play(file),pause,stop of video out over MIDI (raspberry pi)
-## Original README
+Control video playback over MIDI on Raspberry Pi
 
-## Dependencies
+## Article
 
-```
-sudo apt-get update && sudo apt-get install -y \
-    gstreamer1.0-tools \
-    gstreamer1.0-plugins-base \
-    gstreamer1.0-plugins-good \
-    gstreamer1.0-plugins-bad \
-    gstreamer1.0-plugins-ugly \
-    gstreamer1.0-libav \
-    libgstreamer1.0-dev \
-    libgstreamer-plugins-base1.0-dev
-```
+Rust utility for syncing video to MIDI in live performance. Solves a specific need competently.

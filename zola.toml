@@ -1,11 +1,34 @@
 # The URL the site will be built for
 base_url = "https://alexanderbrevig.no"
 
+# Site title
+title = "Alexander Brevig"
+
+# The theme to use
+theme = "tabi"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
+[search]
+index_format = "elasticlunr_javascript"
+
+[[taxonomies]]
+name = "tags"
+template = "taxonomy_single.html"
+paginate_by = 100
+sort_by = "title"
+path = "tags"
+
+[[taxonomies]]
+name = "category"
+template = "taxonomy_single.html"
+paginate_by = 100
+sort_by = "title"
+path = "categories"
 
 [markdown]
 
@@ -14,3 +37,28 @@ theme = "catppuccin-mocha"
 
 [extra]
 # Put all your custom variables here
+author = "Alexander Brevig"
+
+# Tabi theme settings
+show_date = true
+show_reading_time = true
+theme_switcher = true
+skin = "teal"
+tag_sorting = "frequency"
+stylesheets = ["tags.css", "archive.css"]
+menu = [
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "archive", url = "archive", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true },
+]
+
+# Content Security Policy configuration
+allowed_domains = [
+    { directive = "font-src", domains = ["'self'", "data:"] },
+    { directive = "img-src", domains = ["'self'", "https://*", "data:"] },
+    { directive = "media-src", domains = ["'self'"] },
+    { directive = "script-src", domains = ["'self'"] },
+    { directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
+    { directive = "frame-src", domains = ["player.vimeo.com", "https://www.youtube-nocookie.com"] },
+]
+enable_csp = true

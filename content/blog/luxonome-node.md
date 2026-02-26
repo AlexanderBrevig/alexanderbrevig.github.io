@@ -1,28 +1,29 @@
 +++
 title = "luxonome-node"
-date = 1681825259
+date = 2023-04-18
+description = "Luxonome PCB panelization for manufacturing"
 category = "Hardware"
-tags = ["Hardware", "Luxonome (visual metronome for live performance, triggered by audio)"]
+tags = ["Hardware", "Luxonome"]
 github = "https://github.com/alexanderbrevig/luxonome-node"
 visibility = "private"
 languages = "Unknown"
-interest_score = 0
+interest_score = 5
+draft = true
+
+[extra]
+post_tags = ["Hardware", "Luxonome"]
 +++
+
+
+
+
 
 ## About
 
+Luxonome PCB panelization for manufacturing
 
-## Original README
+## Article
 
-# luxonome-node
+Hardware panelization for production. Shows you're planning real manufacturing—smart setup.
 
-kikit panelize \
-    --layout 'hspace: 5mm; vspace: 5mm; rows: 2; cols: 3' \
-    --cuts 'type: mousebites' \
-    --framing 'type: railstb' \
-    --tooling 'type: 4hole; hoffset: 2.5mm; voffset: 10mm' \
-    --fiducials 'type: 4fid; hoffset: 2.5mm; voffset: 2.5mm' \
-    --text 'type: simple; voffset: 2.5mm; width: 2mm; height: 2mm; text: LUXONOME' \
-    --copperfill 'type: solid' \
-    --post 'copperfill: True; refillzones: True' \
-    /home/alexander/github.com/luxonome-node/luxonome-node.kicad_pcb panel.kicad_pcb
+

@@ -1,42 +1,17 @@
 +++
 title = "AlexanderBrevig"
-date = 1661499745
+date = 2022-08-26
+description = "GitHub profile README"
 category = "Meta"
 tags = ["Meta"]
 github = "https://github.com/alexanderbrevig/AlexanderBrevig"
 visibility = "public"
 languages = "Unknown"
-interest_score = 0
+interest_score = 1
+draft = true
+
+[extra]
+post_tags = ["Meta"]
 +++
 
-## About
-
-My profile
-## Original README
-
-<h1 align="center">Hi 👋, I'm Alexander Brevig</h1>
-<h3 align="center">Curious fullstack developer from Norway.</h3>
-
-- 💬 Ask me about **embedded, electronics, programming, games and rapid prototyping**
-
-- 📫 How to reach me **alexander.brevig@hey.com**
-
-- ⚡ Fun fact **I don't go to sleep before having learned something new that day**
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> 
-<a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"> <img src="https://github.com/rust-lang/rust-artwork/blob/master/logo/rust-logo-64x64.png?raw=true" alt="rust" width="40" height="40"/> </a> 
-<a href="https://ocaml.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/ocaml/ocaml-original.svg" alt="ocaml" width="40" height="40"/> </a> 
-<a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> 
-<a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> 
-<a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> 
-<a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> 
-<a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> 
-<a href="https://www.haskell.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg" alt="haskell" width="40" height="40"/> </a> 
-<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> 
-<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> 
-<a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> 
-<a href="https://www.kicad.org/" target="_blank" rel="noreferrer"> <img src="https://www.kicad.org/img/kicad_logo_small.png" alt="kicad" width="40" height="40"/> </a> 
-<a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> 
-
+A GitHub profile README. Nice to have for visibility, but it's personal branding rather than a project. The technical interests are there—embedded systems, electronics, programming, rapid prototyping—but there's no code to evaluate here.

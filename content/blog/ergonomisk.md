@@ -1,41 +1,28 @@
 +++
 title = "ergonomisk"
-date = 1692742676
+date = 2023-08-22
+description = "34 key split choc keyboard with a relaxed thumb"
 category = "Hardware"
 tags = ["Hardware", "Keyboard"]
 github = "https://github.com/alexanderbrevig/ergonomisk"
 visibility = "public"
 languages = "Makefile"
-interest_score = 0
+interest_score = 6
+draft = false
+
+[extra]
+post_tags = ["Hardware", "Keyboard"]
 +++
+
+
+
+
 
 ## About
 
 34 key split choc keyboard with a relaxed thumb
-## Original README
 
-# Ergonomisk
+## Article
 
-My first ergogen experiment.
+Your first ergogen experiment—a 34-key split keyboard layout with a relaxed thumb cluster. Ergogen as a tool for keyboard design is clever (parametric PCB generation), and your use of it shows you understand the design space. Split keyboards with optimized ergonomics are a real thing people care about. The design is minimal in the README (which suggests it's still getting dialed in), but the concept is sound. If you've actually built and used this layout, that's valuable validation. Keyboard design is both art and science, and getting the ergonomics right matters.
 
-```
-╭───╮ ╭───╮ ╭───╮ ╭───╮ ╭───╮ ╭───╮ ╭───╮ ╭───╮ ╭───╮ ╭───╮  
-│ E │ │ r │ │ g │ │ o │ │ n │ │ o │ │ m │ │ i │ │ s │ │ k │  
-╰───╯ ╰───╯ ╰───╯ ╰───╯ ╰───╯ ╰───╯ ╰───╯ ╰───╯ ╰───╯ ╰───╯  
-```
-
-## Install
-
-* `git clone --recurse-submodules git@github.com:alexanderbrevig/ergonomisk`
-* KiCAD 7
-* `npm i -g ergogen`
-* `make`
-
-This will generate a stub PCB that I modified to get to the final design.
-
-
-## REFs
-
-https://splitkb.com/
-https://fkcaps.com/?a=FlatFootFox
-https://flatfootfox.com/ergogen-introduction/

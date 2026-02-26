@@ -1,18 +1,43 @@
 +++
 title = "forthrc"
-date = 1769609417
+date = 2026-01-28
+description = "Forth controlled programmatic resistor and capacitor, for experimentation and hot swap of values"
 category = "Hardware"
 tags = ["Hardware"]
 github = "https://github.com/alexanderbrevig/forthrc"
 visibility = "private"
 languages = "Forth"
-interest_score = 0
+interest_score = 9
+
+[extra]
+post_tags = ["Hardware"]
 +++
 
-## About
 
-Forth controlled programmatic resistor and capacitor, for experimentation and hot swap of values
-## Original README
+
+
+Why this matters: Circuit prototyping on a breadboard involves a lot of component swapping. You breadboard a filter, and it needs a different resistor value. You grab parts from your bin, measure, try again. Repeat fifty times. What if you could dial the value in from software instead?
+
+The problem is that component values are fixed. If you breadboard a filter and the frequency is slightly off, you need to unsolder and swap resistors. This kills iteration speed. You end up building "component kits" with multiple resistor values pre-assembled, which wastes parts and bench space.
+
+My idea is to use digital potentiometers (variable resistors controlled by SPI) and switched capacitor arrays so I can change component values electronically. Combine them on an RP2040 with a Forth REPL and I get interactive circuit tuning from software.
+
+I built `forthrc` as a programmable resistor-capacitor tool. The hardware uses three MCP4131 digital potentiometers (100kΩ each) for resistance, and a binary-weighted capacitor array (1nF to 512nF) controlled by analog switches. An opamp multiplier extends the capacitance range. Everything is wired to an RP2040 running Zeptoforth.
+
+The Forth interface is intuitive. Set resistance with human-readable units:
+
+```forth
+\ Set Port A to 47 kiloohms
+47 KOHMS PORTA!
+
+\ Set capacitance to 470nF
+470 NF CAP-NF!
+
+\ Read back current values
+PORTA@ raw>kohms . ." kΩ" cr
+```
+
+The tool includes hardware test routines so you can verify everything works before you start prototyping. The documentation covers pin connections, troubleshooting, and a step-by-step path from minimal testing (one resistor channel) to the full system. This solves a real pain point in circuit prototyping—instead of hunting through bins for the right resistor, you dial it in from the REPL. It's a creative, pragmatic solution to a problem every hardware designer faces.
 
 # Programmable Component Tool
 

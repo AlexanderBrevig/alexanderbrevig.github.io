@@ -1,40 +1,28 @@
 +++
 title = "typst-forth"
-date = 1769559994
+date = 2026-01-28
+description = "Forth syntax highlighting for Typst"
 category = "Forth"
 tags = ["Forth"]
 github = "https://github.com/alexanderbrevig/typst-forth"
 visibility = "public"
 languages = "Typst"
-interest_score = 0
+interest_score = 4
+draft = false
+
+[extra]
+post_tags = ["Forth"]
 +++
+
+
+
+
 
 ## About
 
-Forth syntax highlight for Typst
-## Original README
+Forth syntax highlighting for Typst
 
-# codeforth
+## Article
 
-Forth syntax highlighting for [Typst](https://typst.app/).
+A syntax highlighter for Forth in Typst. Published on Typst's package registry. Useful if you're writing Forth documentation in Typst (which, given your other Forth projects, you probably are). It's narrow in scope but solves the exact problem someone needs when writing about Forth.
 
-![](example.png)
-
-## Installation
-
-````typst
-#import "@preview/codeforth:0.1.0": forth-syntax
-#set raw(syntaxes: forth-syntax)
-
-```forth
-: fun 1 2 + ;
-```
-````
-
-## Credits
-
-- Syntax patterns informed by [mitranim/sublime-forth](https://github.com/mitranim/sublime-forth)
-
-## License
-
-MIT

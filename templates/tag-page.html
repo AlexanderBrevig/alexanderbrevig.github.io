@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+{{ macros_page_header::page_header(title=section.title) }}
+
+<div class="tag-page-content">
+    {{ section.content | safe }}
+</div>
+
+<style>
+.tag-page-content ul li a { color: inherit; text-decoration: underline; }
+.tag-page-content blockquote { margin-left: 1.5em; border-left: 2px solid var(--border-color, #ccc); padding-left: 1em; opacity: 0.8; }
+</style>
+
+{% endblock main_content %}

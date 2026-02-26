@@ -1,41 +1,28 @@
 +++
 title = "TripleFiveSynth"
-date = 1643760599
+date = 2022-02-02
+description = "One 555 per pitch oscillator"
 category = "Hardware"
-tags = ["Hardware", "Audio / live performance"]
+tags = ["Hardware", "Audio"]
 github = "https://github.com/alexanderbrevig/TripleFiveSynth"
 visibility = "public"
 languages = "AGS Script"
-interest_score = 0
+interest_score = 7
+draft = true
+
+[extra]
+post_tags = ["Hardware", "Audio"]
 +++
+
+
+
+
 
 ## About
 
 One 555 per pitch oscillator
-## Original README
 
-# TripleFiveSynth
+## Article
 
-    Work In Progress!
+A creative hardware synth design: use one 555 timer IC per MIDI note to create a polyphonic oscillator. It's unconventional—most people use integrated synth chips or complicated analog circuits. This is elegant in its simplicity and shows real understanding of both 555 timers and what it takes to build synthesizers. The Rust code that calculates trim values for each frequency is the cherry on top. It's a work-in-progress, but the idea and execution show genuine creativity. This is the kind of project that makes other electronics folks go "huh, I never thought of that."
 
-A simple idea of using a 555 timer per note in a synth.
-
-## `/src/main.rs`
-
-
-This will generate appropriate capacitor and trim values for each note.
-
-See the output in [tune_triple_fives.txt](https://raw.githubusercontent.com/alexanderbrevig/TripleFiveSynth/tune_triple_fives.txt) for details.
-
-## 555 Configuration
-
-The plan is to have one of these voices per note:
-![555 voice](https://raw.githubusercontent.com/AlexanderBrevig/TripleFiveSynth/main/img/triplefive.png)
-
-## Example tuning for 440Hz
-
-Per the line in `tune_triple_fives.txt` we get:
-
-> 0440.00Hz => 150.00nF	Trim => 1431.9Ω -> 71.60%
-
-This means, our `C3` should be `150nF`, and `R3` at approx `71.6%`.
